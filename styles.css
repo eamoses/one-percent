@@ -1,3 +1,50 @@
 body {
   font-family: Avenir;
 }
+
+h1 {
+  margin: auto;
+  width: 65vw;
+}
+
+.text {
+  font-size: 16px;
+  margin: auto;
+  width: 65vw;
+}
+
+.calculations {
+  font-size: 16px;
+  margin: auto;
+  width: 65vw;
+}
+
+.speed {
+  font-size: 16px;
+  margin: auto;
+  width: 65vw;
+}
+
+.sloth {
+  font-size: 26px;
+  margin: 35px;
+  cursor: pointer;
+}
+
+.snail {
+  font-size: 26px;
+  margin: 35px;
+  cursor: pointer;
+}
+
+.turtle {
+  font-size: 26px;
+  margin: 35px;
+  cursor: pointer;
+}
+
+.explination {
+  font-size: 16px;
+  margin: auto;
+  width: 65vw;
+}
