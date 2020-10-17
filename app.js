@@ -1,13 +1,9 @@
 function onePercent() {
   const inputvalue = document.getElementById('total').value;
-  const outputdiv = document.getElementById('output');
   const explination = document.getElementById('explination');
   const speed = document.getElementById('speed');
   const divide = inputvalue / 100;
   const onepercent = divide * 60;
-  outputdiv.innerHTML = `
-    ${onepercent}
-  `;
   speed.innerHTML = `
     Choose your speed:
     <span onclick="sloth(${onepercent});" class=sloth>🦥</span>
@@ -20,7 +16,9 @@ function sloth(onepercent) {
   console.log('clicked sloth');
   const explination = document.getElementById('explination');
   explination.innerHTML = `
-    This means you will have to run at your goal pace for ${onepercent} seconds.
+    <div class="boxes">${onepercent}s</div>
+    <div class="boxes">${onepercent}s</div>
+    <div class="boxes">${onepercent}s</div>
   `;
 }
 
@@ -28,7 +26,15 @@ function snail(onepercent) {
   console.log('clicked snail');
   const explination = document.getElementById('explination');
   explination.innerHTML = `
-    This means you will have to run at your goal pace for ${onepercent} seconds.
+    <span>
+      <div class="boxes">${onepercent}s</div>
+      <div class="boxes">${onepercent}s</div>
+      <div class="boxes">${onepercent}s</div>
+      <div class="boxes">${onepercent}s</div>
+      <div class="boxes">${onepercent}s</div>
+      <div class="boxes">${onepercent}s</div>
+      <div class="boxes">${onepercent}s</div>
+    </span>
   `;
 }
 
@@ -36,6 +42,8 @@ function turtle(onepercent) {
   console.log('clicked turtle');
   const explination = document.getElementById('explination');
   explination.innerHTML = `
-    This means you will have to run at your goal pace for ${onepercent} seconds.
+    <div class="boxes">${onepercent}s</div>
+    <div class="boxes">${onepercent}s</div>
+    <div class="boxes">${onepercent}s</div>
   `;
 }
